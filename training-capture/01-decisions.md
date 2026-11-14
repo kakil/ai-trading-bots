@@ -30,3 +30,22 @@ Leave the README as the one-line placeholder for now.
 
 ### Why
 The person asked to wait on drafting the README.
+
+## 2026-11-14: First bot is Turtle Breakout 55/20 on Bitcoin daily
+
+### Decision
+The course builds one bot: *Turtle Breakout 55/20*, long only on Bitcoin's daily chart. The rules are in `02-requirements.md` and `strategies/turtle/SPEC.md`.
+
+### Why
+It follows the YouTube course the project is based on. Turtle breakout rules are simple and mechanical, so a beginner can check each trade by hand.
+
+### Considered and set aside
+- Long and short. Long only keeps the first bot simpler to check.
+
+## 2026-11-14: Alerts only, with no automated orders
+
+### Decision
+The bot sends alerts by app and email. The learner places every trade. Claude gets no broker or API access.
+
+### Why
+The learner stays responsible for every trade, which is the center of the oversight module.
