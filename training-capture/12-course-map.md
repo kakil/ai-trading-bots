@@ -9,7 +9,7 @@ Status values: **idea** → **drafted** → **recorded** → **published**
 | # | Module | What it teaches | Source in training capture | Status |
 |---|---|---|---|---|
 | 1 | What a trading bot is | A program that follows exact rules on its own, and what it can and can't do | `02-requirements.md` | idea |
-| 2 | Setup | TradingView desktop (Essential or higher), Claude desktop, the TradingView MCP | `03-architecture.md`, `06-bugs-and-fixes.md` | idea |
+| 2 | Setup | TradingView desktop (Essential or higher), Claude desktop, the TradingView MCP | `setup/TRADINGVIEW-MCP-SETUP.md`, `03-architecture.md`, `06-bugs-and-fixes.md` | drafted |
 | 3 | The 5 rules for bots | Market/timeframe, entry, exit, stop loss, position size | `02-requirements.md`, `strategies/turtle/SPEC.md` | idea |
 | 4 | The Turtle traders | Breakout rules as the basis for the bot | `strategies/turtle/SPEC.md` | idea |
 | 5 | Build the bot | Claude writes Turtle Breakout 55/20 in Pine Script, no coding | `05-prompts-used.md`, `07-testing-log.md` | idea |
@@ -24,3 +24,4 @@ Status values: **idea** → **drafted** → **recorded** → **published**
 |---|---|---|---|---|
 | 2026-11-14 | Setting up a project so Claude follows the rules automatically | `04-session-log.md` | Optional extra | idea |
 | 2026-11-14 | Writing the 5 rules before asking Claude to build anything | `01-decisions.md` | 3 | idea |
+| 2026-11-14 | Setup troubleshooting table (wrong ZIP folder, Store install path, Claude not fully quit) | `setup/TRADINGVIEW-MCP-SETUP.md` | 2 | drafted |

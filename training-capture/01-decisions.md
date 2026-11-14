@@ -49,3 +49,15 @@ The bot sends alerts by app and email. The learner places every trade. Claude ge
 
 ### Why
 The learner stays responsible for every trade, which is the center of the oversight module.
+
+## 2026-11-14: Use tradesdontlie/tradingview-mcp as the TradingView MCP
+
+### Decision
+Use TradingView MCP Bridge (https://github.com/tradesdontlie/tradingview-mcp) to connect the Claude desktop app to TradingView desktop.
+
+### Why
+It's the server the Mind Math Money setup article uses. It's free, open source (MIT), runs locally, can write and compile Pine and read Strategy Tester results, and can't place trades.
+
+### Risks accepted
+- It's unofficial and uses TradingView's internal interface, so an update can break it.
+- Its disclaimer warns that it may conflict with TradingView's Terms of Use. The course limits use to the learner's own charts, for personal and educational use.
