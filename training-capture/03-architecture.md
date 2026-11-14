@@ -8,7 +8,16 @@ Learner ──prompts──▶ Claude ──TradingView MCP──▶ TradingView
                        │                          ├─ Strategy Tester (backtest)
                        │                          └─ Alerts
                        └─ writes Pine Script, explains results
+
+TradingView alerts ──app / email──▶ Learner ──places trade by hand──▶ Broker
 ```
+
+Claude has no broker or API access. The learner places every order.
+
+## Apps and plans
+- **TradingView desktop app**, Essential plan or higher (technical alerts need a paid plan)
+- **Claude desktop app**
+- **TradingView MCP**, which connects Claude desktop to TradingView desktop
 
 ## TradingView MCP
 - **Server:** *to be recorded (name, source link, version or commit)*

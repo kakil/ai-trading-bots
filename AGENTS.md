@@ -18,6 +18,7 @@ This file works in two ways:
 - **Project:** AI Trading Bots, a free no-code course.
 - **Goal:** teach beginners to build, test and supervise a TradingView trading bot with Claude, without writing code themselves.
 - **Course topics:** the TradingView MCP, 5 rules for bots, the Turtle breakout strategy in Pine Script, backtesting, alerts, and oversight rules.
+- **First bot:** Turtle Breakout 55/20 on Bitcoin daily, long only. The spec is in `strategies/turtle/SPEC.md`. Build from the spec. Don't invent rules.
 - **Audience:** people who don't code. Write everything in plain language.
 - **The course is the product.** The code, prompts, mistakes and fixes recorded here are raw material for lessons.
 
