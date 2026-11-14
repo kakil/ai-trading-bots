@@ -147,3 +147,10 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Secrets and local config (see AGENTS.md)
+.env
+.env.*
+*.secret*
+*.local.json
+.claude/settings.local.json
