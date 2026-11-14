@@ -48,3 +48,26 @@ One entry per working session with Claude or another agent. Use `SESSION-TEMPLAT
 **Course moments:** "Write the 5 rules before asking Claude to build" (module 3).
 
 **Next:** Connect the TradingView MCP, then have Claude write Turtle Breakout 55/20 v1.0.0.
+
+---
+
+## 2026-11-14: Add the TradingView MCP setup guide
+
+**Goal:** Fill in the TradingView MCP blank with the server, its repo and the setup steps.
+
+**What we did**
+- Read the Mind Math Money article on connecting Claude to TradingView, without its promotional and affiliate content.
+- Checked the MCP's official repo directly: owner, license, version, commit and its 84 tool names.
+- Wrote `setup/TRADINGVIEW-MCP-SETUP.md` and filled in `03-architecture.md` and section 6 of `AGENTS.md`.
+
+**Tools:** Claude Code, GitHub
+
+**Tested**
+- [x] Repo link resolves, and the tool names in the guide exist at commit `c05b8f5`
+- [ ] Setup run on a real machine and `tv_health_check` passes: **UNVERIFIED** (Kitwana to run)
+
+**Unverified or open:** the article and the README differ on two points. The article targets Claude desktop and `claude_desktop_config.json`, while the README targets Claude Code and `~/.claude/.mcp.json`. The guide covers both. The MCP's `alert_create` makes price alerts only, so strategy alerts may need to be set up by hand in TradingView.
+
+**Course moments:** setup module walkthrough, plus the troubleshooting table (module 2).
+
+**Next:** Kitwana runs the setup and logs `tv_health_check`.

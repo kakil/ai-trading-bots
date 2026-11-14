@@ -43,6 +43,7 @@ This file works in two ways:
 AGENTS.md            standing instructions (this file)
 CLAUDE.md            Claude Code entry point; imports AGENTS.md
 STATUS.md            one-page "where things stand right now"
+setup/               setup guides, such as TRADINGVIEW-MCP-SETUP.md
 training-capture/    the living record of what actually happened
 strategies/          Pine Script, one folder per strategy, versioned files  (create when first needed)
 backtests/           backtest settings and result summaries                  (create when first needed)
@@ -96,6 +97,9 @@ Copy `PHASE-CHECKPOINT-TEMPLATE.md` into the session log and answer every questi
 
 ## 6. TradingView MCP
 
+- **Server used:** TradingView MCP Bridge, https://github.com/tradesdontlie/tradingview-mcp (unofficial, MIT). The setup steps are in `setup/TRADINGVIEW-MCP-SETUP.md`. Check the connection with `tv_health_check` (`cdp_connected` and `api_available` both true).
+- **Ask first** before `pine_save`, `alert_create`, `alert_delete`, `draw_clear`, `layout_switch`, `tab_close`, or any `ui_*` tool (these change TradingView or run code in it). Reading tools like `chart_get_state`, `quote_get`, `data_get_*` and `pine_get_errors` don't need permission.
+- The MCP can't place real trades. Never add a tool or service that can.
 - Record which MCP server is used, its version or commit, and how it's connected, in `03-architecture.md`. Leave out secrets.
 - If an MCP call fails, log it in `06-bugs-and-fixes.md` with the exact error and the workaround. These are useful teaching moments.
 - Ask before using any MCP action that can change a live chart, a saved script or an alert. Reading data doesn't need permission.
